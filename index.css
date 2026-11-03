@@ -197,5 +197,6 @@ a{
 footer{
     display: grid;
     grid-area: f;
-    text-align: center
+    text-align: center;
+    font-style: italic;
 }
