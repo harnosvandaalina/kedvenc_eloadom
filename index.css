@@ -32,6 +32,10 @@ body.eletut{
     background-color: var(--wasabi);
 }
 
+body.albumok{
+    background-color: var(--brass);
+}
+
 main.fooldal{
     width: 80%;
     max-width: 1000px;
@@ -64,6 +68,23 @@ main.eletut{
     "f f";
     background-color: var(--esmeralda);
     color: var(--khaki)
+}
+
+main.albumok{
+    width: 80%;
+    max-width: 1000px;
+    min-height: 100vh;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 400px auto 1fr auto;
+    grid-template-areas: 
+    "h h"
+    "n n"
+    "ar ar"
+    "f f";
+    background-color: var(--bronze);
+    color: var(--shining_side);
 }
 
 header{
@@ -131,10 +152,37 @@ article.eletut{
     font-style: italic;
     margin: 10px;
 }
+article.albumok{
+    display: grid;
+    grid-area: ar;
+    grid-template-columns: repeat(3,300px) ;
+    gap: 20px;
+    
+}
 
 h2{
     text-align: start;
     color: var(--terra);
+}
+
+.kartya img{
+    grid-row: 1;
+    max-height: 300px;
+}
+
+.kartya a{
+    text-decoration: none;
+    text-align: center;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+.kartya{
+    display: grid;
+    grid-template-rows: 1fr auto;
+    border: 3px solid var(--shining_side);
+    width: 100%;
+    margin: 10px;
+    object-fit: cover;
 }
 
 footer{
