@@ -19,11 +19,20 @@
     --golden: #AD6D15;
     --bronze: #79380B;
     --brass: #441004;
+
+    --header-height: 400px;
 }
-body{
+
+body.fooldal{
     background-color: var(--sapphire);
+    
 }
-main{
+
+body.eletut{
+    background-color: var(--wasabi);
+}
+
+main.fooldal{
     width: 80%;
     max-width: 1000px;
     min-height: 100vh;
@@ -37,7 +46,24 @@ main{
     "as ar"
     "f f";
     background-color: var(--navy_blue);
-    color: var(--ivory);
+    color: var(--ivory)
+}
+
+main.eletut{
+    width: 80%;
+    max-width: 1000px;
+    min-height: 100vh;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 400px auto 1fr auto;
+    grid-template-areas: 
+    "h h"
+    "n n"
+    "ar ar"
+    "f f";
+    background-color: var(--esmeralda);
+    color: var(--khaki)
 }
 
 header{
@@ -74,7 +100,7 @@ a{
 a:hover{
     background-color: var(--warm_taupe);
     color: var(--navy_blue);
-    padding: 10px;
+    
 }
 
 aside{
@@ -88,7 +114,7 @@ aside img{
     padding-top: 10px;
 }
 
-article{
+article.fooldal{
     display: grid;
     grid-area: ar;
     text-align: justify;
@@ -96,6 +122,19 @@ article{
     margin: 10px;
     padding-top: 30px;
     font-size: 18px;
+}
+
+article.eletut{
+    display: grid;
+    grid-area: ar;
+    text-align: justify;
+    font-style: italic;
+    margin: 10px;
+}
+
+h2{
+    text-align: start;
+    color: var(--terra);
 }
 
 footer{
