@@ -146,6 +146,11 @@ article.eletut{
     margin: 10px;
 }
 
+a.eletutlink{
+    text-decoration: none;
+    color: var(--khaki);
+}
+
 
 /*albumok*/
 body.albumok{
@@ -252,12 +257,43 @@ header img{
     object-fit: cover;
 }
 
-
-
-
-
 footer{
     display: grid;
     grid-area: f;
     text-align: center;
+}
+
+@media (max-width:400px) {
+    
+    main.fooldal,
+    main.eletut,
+    main.albumok{
+        display: grid;
+        width: 100%;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "h"
+        "n"
+        "as"
+        "ar"
+        "f";
+    }
+
+    aside{
+        justify-content: center;    
+    }
+
+    .kartyak{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .kartya{
+        object-fit: cover;
+    }
+
+    .kartya img{
+        width: 100%;
+        object-fit: cover;
+    }
 }
